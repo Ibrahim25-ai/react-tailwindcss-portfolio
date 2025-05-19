@@ -27,27 +27,27 @@ const experiences = [
     icon: tl,
     iconBg: "#E6DEDD",
     date: "Jul. 2024 - Present",
-      points: [
-          "- Developed features handling timeout and error conditions, improving transaction reliability.",
-          "- Optimized Ingenico’s payment solution, reducing lag and improving uptime by 15% across 10 functionalities.",
-          "- Refactored legacy code using SOLID principles, reducing technical debt by 20% and maintenance time by 25%.",
-          "- Migrated 20+ projects from SVN to Bitbucket, automating scripts to streamline deployment.",
-          "- Collaborated with a Scrum team using Jira, achieving an average sprint completion rate of 95%.",
-      ],  
+    points: [
+      "- Implemented C++ design patterns (Factory, Observer, Iterator, Strategy) to modularize payment-terminal firmware, improving maintainability and enabling rapid feature rollouts within biweekly sprints.",
+      "- Developed certificate-expiry detection logic in C++, cross-checking X.509 certificates against the system clock at startup; terminals now refuse expired credentials and display a 'Certificate Expired' prompt, protecting transactions for thousands of merchants.",
+      "- Refactored legacy code paths with modern C++ best practices (lambda expressions, std::unique_ptr, std::function maps), reducing authorization routine execution time by 15% and eliminating critical memory leaks.",
+      "- Authored Python scripts to migrate over 50 SVN repositories to Bitbucket, automating branch mapping and preserving full commit history, reducing migration effort by 40%.",
+      "- Triaged and resolved high-severity customer issues (terminal reboots, system crashes) by leading 10+ root-cause analysis sessions—examining logs, reproducing firmware faults, and updating configuration guides—to reduce mean time to resolution by 30%.",
+      "- Mentored three junior engineers through internal DevOps and advanced C++ certification programs, co-leading weekly hands-on workshops to share best practices in CI/CD pipelines and modern C++ features.",
+    ],  
   },
   {
     title: "End of Studies Internship",
-    company_name: "ReDX (Revolutionary Digital\n" +
-        "Transformation Technologies)",
+    company_name: "ReDX (Revolutionary Digital\nTransformation Technologies)",
     icon: rd,
     iconBg: "#E6DEDD",
     date: "Feb. 2024 - Jun. 2024",
     points: [
-      "- Optimized NextVision, an application for interpreting seismic data using parallel programming.",
-      "- Analyzed existing algorithms in NextVision.",
-      "- Created a Docker environment to reduce setup time by 50%, for seamless deployment.",
-      "- Developed a hybrid CPU-GPU algorithm, Improving execution time by 5.39x.",
-      "- Tested and benchmarked to confirm performance enhancements.",
+      "- Accelerated BFS graph processing by 5.39× on 44 GB seismic datasets by refactoring NextVision’s C++ code to use cugraph::bfs with concurrent multi-source searches and optimized CUDA kernel queues via OpenACC pragmas on an NVIDIA A100 GPU.",
+      "- Reduced NextVision environment setup time by 50% (from 40 minutes to 20 minutes) by designing a Docker container pre-installing CUDA 12, cuGraph 0.21, Thrust, and Python 3.10, ensuring reproducible HPC onboarding and eliminating configuration drift.",
+      "- Validated algorithmic correctness via byte-for-byte patch comparison, confirming that GPU-accelerated BFS outputs matched CPU results across 120 test graphs (1 GB–44 GB) and maintained 100% fidelity in cluster assignments.",
+      "- Collaborated with geophysicists and GIS analysts to identify maximal independent vertex subsets—automating multi‑seed BFS launches—and co-authored an EAGE conference paper that demonstrated a 5× improvement in interpretive throughput.",
+      "- Benchmarked FastAPSP versus BFS workloads, projecting a further 3× reduction in compute complexity on large sparse graphs; documented findings to guide future cuGraph integrations once API support becomes available.",
     ],
   },
   {
@@ -64,16 +64,15 @@ const experiences = [
   },
   {
     title: "DevOps Engineer Intern",
-    company_name:  "ReDX (Revolutionary Digital\n" +
-        "Transformation Technologies)",
+    company_name: "ReDX (Revolutionary Digital\nTransformation Technologies)",
     icon: rd,
     iconBg: "#E6DEDD",
-    date: "Jun. 2023 - Aug. 2023",
+    date: "Jun. 2023 - Sep. 2023",
     points: [
-      "- Developed a Cloud-Based HPC Training Platform with Advanced Features and Enhanced User Experience.",
-      "- Designed and implemented dashboards for six distinct roles, each with customized KPIs and departmental metrics.",
-      "- Secured communication between backend and frontend using JWT authentication.",
-      "- Created features for course progress tracking and automated certification issuance.",
+      "- Built CI/CD pipelines with GitHub Actions—accelerating releases by 80%—and containerized microservices with Docker and Kubernetes for scalable HPC/AI deployments.",
+      "- Architected AWS (EC2, S3, IAM) infrastructure and implemented Prometheus/Grafana monitoring for 99.99% uptime and proactive alerting on performance issues.",
+      "- Migrated infrastructure to Terraform as code, improving deployment repeatability and reducing environment drift.",
+      "- Automated course-progress tracking and certificate issuance workflows, reducing manual tasks for trainers by 40%.",
     ],
   },
   {
@@ -81,12 +80,12 @@ const experiences = [
     company_name: "Djagora FABLAB",
     icon: dg,
     iconBg: "#E6DEDD",
-    date: "Jul. 2022 - Aug. 2022",
+    date: "Jul. 2022 - Sep. 2022",
     points: [
-      "- Developed a mobile application for patient monitoring, used by over 50 patients during initial testing, improving healthcare accessibility and efficiency.",
-      "- Implemented real-time visualization features for tracking patient conditions, with updates displayed within a 1-second delay.",
-      "- Designed an alert system capable of sending notifications in under 5 seconds, reducing response time for critical emergencies by 40%.",
-
+      "- Developed a Flutter/Dart mobile app for patient monitoring, delivering sub‑second vital‑sign updates for 50+ users.",
+      "- Engineered an alert subsystem to send notifications within 5 seconds of critical condition detection, reducing response times by 40%.",
+      "- Integrated MongoDB with a Python/Flask backend to securely store clinical data and power RESTful API endpoints for seamless data exchange.",
+      "- Collaborated with healthcare professionals to gather requirements and optimize UX, achieving over 50 active users during initial testing.",
     ],
   },
   {
@@ -115,5 +114,4 @@ const experiences = [
   },
 ];
 
-
-export { styles,experiences };
+export { styles, experiences };
